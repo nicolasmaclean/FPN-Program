@@ -17,91 +17,88 @@ const fractalDiv = document.getElementById('fractal');
 const fourierDiv = document.getElementById('fourier');
 const colonizationDiv = document.getElementById('colonization');
 
-var selected = 0;
+var nEmbed = document.createElement('embed');
 
 function updateEmbed() {
-    var nEmbed = document.createElement('embed');
-    switch(selected){
-        case 0: nEmbed.src = "https://nicolasmaclean.github.io/rock-paper-scissors-lizard-spock/"; break;
-        case 1: nEmbed.src = "https://nicolasmaclean.github.io/Bouncing-Circles/"; break;
-        case 2: nEmbed.src = "https://nicolasmaclean.github.io/Circles/"; break;
-        case 3: nEmbed.src = "https://nicolasmaclean.github.io/Collision-Detection/"; break;
-        case 4: nEmbed.src = "https://nicolasmaclean.github.io/Collision-Sim/"; break;
-        case 5: nEmbed.src = "https://nicolasmaclean.github.io/Molecules/"; break;
-        case 6: nEmbed.src = "https://nicolasmaclean.github.io/Circular-Motion/"; break;
-        case 7: nEmbed.src = "https://nicolasmaclean.github.io/Polar-Graph/"; break;
-        case 8: nEmbed.src = "https://nicolasmaclean.github.io/Snake/"; break;
-        case 9: nEmbed.src = "https://nicolasmaclean.github.io/Spring-Motion/"; break;
-        case 10: nEmbed.src = "https://nicolasmaclean.github.io/Fractal-Tree/"; break;
-        case 11: nEmbed.src = "https://nicolasmaclean.github.io/Fourier-Series/"; break;
-        case 12: nEmbed.src = "https://nicolasmaclean.github.io/Space-Colonization/"; break;
-    }
     embedDiv.appendChild(nEmbed);
     embedDiv.removeChild(embedFrame);
     embedFrame = nEmbed;
 }
 
 rockDiv.addEventListener('click', () => {
-    selected = 0;
+    nEmbed = document.createElement('embed');
+    nEmbed.src = "https://nicolasmaclean.github.io/rock-paper-scissors-lizard-spock/"
     updateEmbed();
 });
 
 bouncyDiv.addEventListener('click', () => {
-    selected = 1;
+    nEmbed = document.createElement('embed');
+    nEmbed.src = "https://nicolasmaclean.github.io/Bouncing-Circles/"
     updateEmbed();
 });
 
 circlesDiv.addEventListener('click', () => {
-    selected = 2;
+    nEmbed = document.createElement('embed');
+    nEmbed.src = "https://nicolasmaclean.github.io/Circles/"
     updateEmbed();
 });
 
 collisionDiv.addEventListener('click', () => {
-    selected = 3;
+    nEmbed = document.createElement('embed');
+    nEmbed.src = "https://nicolasmaclean.github.io/Collision-Detection/"
     updateEmbed();
 });
 
 colBallsDiv.addEventListener('click', () => {
-    selected = 4;
+    nEmbed = document.createElement('embed');
+    nEmbed.src = "https://nicolasmaclean.github.io/Collision-Sim/";
     updateEmbed();
 });
 
 moleculesDiv.addEventListener('click', () => {
-    selected = 5;
+    nEmbed = document.createElement('embed');
+    nEmbed.src = "https://nicolasmaclean.github.io/Molecules/";
     updateEmbed();
 });
 
 circularDiv.addEventListener('click', () => {
-    selected = 6;
+    nEmbed = document.createElement('embed');
+    nEmbed.src = "https://nicolasmaclean.github.io/Circular-Motion/";
     updateEmbed();
 });
 
 polarDiv.addEventListener('click', () => {
-    selected = 7;
+    nEmbed = document.createElement('embed');
+    nEmbed.src = "https://nicolasmaclean.github.io/Polar-Graph/";
     updateEmbed();
 });
 
 snakeDiv.addEventListener('click', () => {
-    selected = 8;
+    nEmbed = document.createElement('embed');
+    nEmbed.src = "https://nicolasmaclean.github.io/Snake/";
     updateEmbed();
 });
 
 springDiv.addEventListener('click', () => {
-    selected = 9;
+    nEmbed = document.createElement('embed');
+    nEmbed.src = "https://nicolasmaclean.github.io/Spring-Motion/";
     updateEmbed();
 });
 
 fractalDiv.addEventListener('click', () => {
-    selected = 10;
+    nEmbed = document.createElement('embed');
+    nEmbed.src = "https://nicolasmaclean.github.io/Fractal-Tree/";
     updateEmbed();
 });
 
 fourierDiv.addEventListener('click', () => {
-    selected = 11;
+    nEmbed = document.createElement('embed');
+    nEmbed.src = "https://nicolasmaclean.github.io/Fourier-Series/";
     updateEmbed();
 });
 
 colonizationDiv.addEventListener('click', () => {
-    selected = 12;
+    nEmbed = document.createElement('embed');
+    nEmbed.src = "https://nicolasmaclean.github.io/Space-Colonization/";
     updateEmbed();
 });
