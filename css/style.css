@@ -1,5 +1,70 @@
-body {
-    margin: 0;
+* {
     padding: 0;
-    
+    margin: 0;
+}
+
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 1rem 2rem 1rem 2rem;
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    font-family: 'Raleway', sans-serif;
+    grid-template-columns: 1fr 14rem;
+    grid-template-rows: 6.25rem 60vh 1fr;
+    grid-template-areas:"title toc"
+                        "embeded toc"
+                        "description toc";
+    column-gap: 2rem;
+    background-color: #fff;
+    color: #333;
+}
+
+#title {
+    grid-area: title;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+#embedDiv {
+    grid-area: embeded;
+}
+
+embed {
+    /* height: 380px; */
+    height: 100%;
+    /* width: 580px; */
+    width: 100%;
+}
+
+#description {
+    grid-area: description;
+    padding: 1rem;
+}
+
+#buttons {
+    grid-area: toc;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#polar h4 {
+    color: #0C75D6;
+}
+
+.button {
+    cursor: pointer;
+}
+
+h4 {
+    font-size: 1.25rem;
+    padding-bottom: 1rem;
 }
