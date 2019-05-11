@@ -16,6 +16,8 @@ const springDiv = document.getElementById('spring');
 const fractalDiv = document.getElementById('fractal');
 const fourierDiv = document.getElementById('fourier');
 const colonizationDiv = document.getElementById('colonization');
+const rayDiv = document.getElementById('ray');
+
 const descriptionTitle = document.getElementById('descriptionTitle');
 const descriptionParagraph = document.getElementById('descriptionParagraph');
 
@@ -43,6 +45,7 @@ function updateEmbed() {
         case 10: fractalDiv.childNodes[1].style.color = c1; break;
         case 11: fourierDiv.childNodes[1].style.color = c1; break;
         case 12: colonizationDiv.childNodes[1].style.color = c1; break;
+        case 13: rayDiv.childNodes[1].style.color = c1; break;
     }
 }
 
@@ -161,4 +164,13 @@ colonizationDiv.addEventListener('click', () => {
     colonizationDiv.childNodes[1].style.color = c2;
     active = 12;
     descriptionTitle.innerHTML = "Space Colonization Tree"
+});
+
+rayDiv.addEventListener('click', () => {
+    nEmbed = document.createElement('embed');
+    nEmbed.src = "https://nicolasmaclean.github.io/2d-Ray-Casting/";
+    updateEmbed();
+    rayDiv.childNodes[1].style.color = c2;
+    active = 12;
+    descriptionTitle.innerHTML = "2d Ray Casting"
 });
