@@ -80,6 +80,11 @@ var data = {
             description: "Ray casting is common method used in 3d rendering. The circle at the place of the mouse can be a camera or person. There are lines shooting out from it in all directions. The lines will go until they intersect with another surface. A 3d render would use the distance the line travels to apply an effect to the environment that imitates a realistic perspective. The further the line has to go, the smaller the surface would be. In the above simulation, the person or light follows the mouse and will rotate with the scroll of your mouse.",
             link: "https://nicolasmaclean.github.io/2d-Ray-Casting/",
             number: 13
+        }, {
+            title: "Mandelbrot Set",
+            description: "This is an interactive demo of the Mandelbrot, Julia, and Multibrot set fractals. They use the riemann sphere to graph imaginary numbers into a 2d space. On the left side you can cycle through the different sets, 2 different color settings, and change some of the constants used in each demo.",
+            link: "https://nicolasmaclean.github.io/Julia-Set/",
+            number: 14
         }
     ]
 };
